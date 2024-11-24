@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['clear_cart'])) {
             <?php foreach ($_SESSION['cart'] as $item): ?>
                 <div class="product">
                     <h3><?php echo htmlspecialchars($item['name']); ?></h3>
-                    <p>Precio: $<?php echo htmlspecialchars($item['price']); ?></p>
+                    <p>Precio: €<?php echo htmlspecialchars($item['price']); ?></p>
                 </div>
             <?php endforeach; ?>
         <?php else: ?>
@@ -43,4 +43,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['clear_cart'])) {
     </footer>
 </body>
 </html>
-
