@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preferencias</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Preferencias del Usuario</h1>
+    </header>
+    <form onsubmit="guardarPreferencias(); return false;" class="formulario-preferencias">
+        <label for="idioma">Idioma:</label>
+        <select id="idioma">
+            <option value="es">Español</option>
+            <option value="en">Inglés</option>
+        </select>
+        <label for="tema">Tema:</label>
+        <select id="tema">
+            <option value="light">Claro</option>
+            <option value="dark">Oscuro</option>
+        </select>
+        <button type="submit">Guardar Preferencias</button>
+    </form>
+    <div class="search-container">
+        <a href="productos.html"><button>Volver a Productos</button></a>
+    </div>
+    <footer>
+        <p>© 2024. Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

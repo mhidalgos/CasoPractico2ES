@@ -1,0 +1,100 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #008040;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.search-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    width: 50%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background-color: #008040;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center; /* Centra los productos horizontalmente */
+    flex-wrap: wrap; /* Permite que los productos se envuelvan */
+    gap: 20px; /* Espaciado entre las tarjetas */
+    margin: 20px auto; /* Centra la cuadrícula en la página */
+    max-width: 1200px; /* Limita el ancho máximo de la cuadrícula */
+    padding: 0 10px; /* Evita que los productos se corten en pantallas pequeñas */
+}
+
+.product {
+    background-color: white;
+    flex: 1 1 calc(25% - 20px); /* Ajusta el ancho al 25% menos el espacio */
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-width: 200px; /* Ancho mínimo para las tarjetas */
+    max-width: 300px; /* Ancho máximo para las tarjetas */
+    box-sizing: border-box; /* Incluye márgenes y padding en el tamaño */
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 14px;
+    color: #555;
+}
+
+.product button {
+    padding: 10px;
+    background-color: #008040;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #008040;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative; /* Evita que el pie de página se sobreponga */
+    width: 100%;
+}
+.product img {
+    max-width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-height: 200px; /* Altura máxima uniforme */
+    object-fit: contain; /* Ajusta la imagen dentro del contenedor sin recortarla */
+}
