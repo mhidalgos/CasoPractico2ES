@@ -16,7 +16,7 @@ function mostrarCarrito() {
             const productoDiv = document.createElement('div');
             productoDiv.className = 'product';
             productoDiv.innerHTML = `
-                <h3>${item.nombre}</h3>
+                <h3>€{item.nombre}</h3>
                 <p>Precio: €${item.precio}</p>
             `;
             contenedorCarrito.appendChild(productoDiv);
